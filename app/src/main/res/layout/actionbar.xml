@@ -1,0 +1,23 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:background="#2f94ea"
+    >
+
+    <ImageView
+        android:id="@+id/ic"
+        android:src="@drawable/ic_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/brand"
+        android:gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="match_parent" />
+
+</android.support.v7.widget.Toolbar>

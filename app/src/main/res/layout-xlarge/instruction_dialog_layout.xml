@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Enter Instruction for the Cart Item!!"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="Enter Quantity"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                android:text="0"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addQuantity"
+                android:text="+"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/image_border"
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/delQuantity"
+                android:text="-"
+                android:layout_weight="1"
+                android:background="@drawable/image_border"
+                android:layout_width="60dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="Enter Size"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_size"
+                android:text="0"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addSize"
+                android:text="+"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/image_border"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/delSize"
+                android:text="-"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/image_border"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/Regular"
+                android:text="Regular"
+                android:textSize="10sp"
+                android:background="@drawable/image_border"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="160dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:background="@drawable/image_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/melting_spinner"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="Enter Weight"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_weight"
+                android:text="0"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/addWeight"
+                android:text="+"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/image_border"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/delWeight"
+                android:text="-"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/image_border"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/Regular_weight"
+                android:text="Regular"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_border"
+                android:layout_weight="1"
+                android:layout_width="160dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_remark"
+            android:hint="Enter Remarks"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/connect"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Submit"
+                android:text="Submit"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/connect"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

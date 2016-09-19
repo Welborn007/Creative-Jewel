@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second_level">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/normal_actionbar" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_above="@+id/buttonholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_above="@+id/listView1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/zoom"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#80FFFFFF"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_above="@+id/listView1"
+                    android:text="Pinch to Zoom"
+                    android:layout_height="match_parent"
+                    ></TextView>
+
+                <com.devsmart.android.ui.HorizontalListView
+                    android:id="@+id/listView1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="5dp"
+                    android:focusable="false"
+                    android:background="@drawable/border_simple"
+                    android:choiceMode="multipleChoice"
+                    android:clickable="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/buttonholder"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/connect"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <Button
+                    android:id="@+id/findSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/connect"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <Button
+                    android:id="@+id/checkout"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/connect"
+                    android:layout_height="wrap_content"
+                    android:text="Checkout" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

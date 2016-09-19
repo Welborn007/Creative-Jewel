@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Creative Jewel</string>
+
+
+    <!-- Login Activity -->
+    <string name="hint_edit1">User Name or Mobile No.</string>
+    <string name="hint_edit2">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sing_up">Sign Up</string>
+    <string name="t_c">T &amp; C</string>
+    <string name="learn_more">Learn More</string>
+    <string name="loginheader">Login</string>
+    <string name="title_username_required">*username required</string>
+    <string name="title_email_id_required">*email required</string>
+    <string name="title_password_required">*password required</string>
+    <string name="showpassword">Show Password</string>
+    <string name="forgotpassword">Forgot Password</string>
+    <string name="forgotemail">Enter Email ID</string>
+
+    <!--Network errors-->
+    <string name="generic_server_down">No Internet</string>
+    <string name="generic_error">No Internet</string>
+    <string name="generic_parse_error">No Internet</string>
+    <string name="no_internet_error">No Internet</string>
+
+    <!--address-->
+    <string name="txt_address">Address</string>
+    <string name="country_title">Country Name</string>
+    <string name="state_title">State Name</string>
+    <string name="flat_title">flat No</string>
+    <string name="city_title">City Name</string>
+    <string name="area_title">Area Name</string>
+    <string name="building_title">Building Name</string>
+    <string name="street_title">Street Name</string>
+    <string name="heading_title">Heading</string>
+    <string name="pincode_title">Pin Code</string>
+    <string name="landmark_title">Landmark</string>
+    <string name="address_title">Address</string>
+    <string name="addnewaddress_title">Add Address</string>
+    <string name="button_submit_address">Submit</string>
+    <string name="txt_customer_address">E-502,Saraswati Bldg,Evershine nagar,Malad(W),Mumbai-400064</string>
+
+    <!-- Register Activity -->
+
+    <string name="register_header">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="reg_email">Email Id</string>
+    <string name="mobile">Mobile No</string>
+    <string name="reg_password">Password</string>
+    <string name="Take_Photo">Take Photo</string>
+    <string name="Choose">Choose Photo</string>
+    <string name="recover_password">Enter Email</string>
+
+
+    <string name="some_text">
+     Some North American Countries!
+    </string>
+
+
+    <string name="contact_details">For More Inquiry Contact us on:-\nParimal Plaza, 9th Bhuleshwar Road,2nd Floor, Office No. 210/211,Next to Surti Hotel, Opp.Cotton Exchange Bldg., \nKalbadevi Road, Mumbai - 400 002. \nTel. : \n022-4920 1960\n022-4920 1870\n022-4919 5338\n022-2346 4749\n022-2346 6070 \nMobile : +91-9833680180 \nEmail : creative.jewel@hotmail.com \nWeb : www.creativejewel.net"</string>
+
+    <string name="details">“CREATIVE JEWEL” Name itself speaks about the Creativity of our Jewellery.\nManufacturer of Rhodium, Casting, Handmade &amp; Cz Fancy Jewellery with all New concepts.
+Stockist of 91.6 Gold Jewellery &amp; Other Melting as Per Order(Client Requirements)
+
+</string>
+
+    <string name="welcome">Welcome to Creative Jewel Mobile Application.</string>
+
+    <string name="how_to_use">Here you will find a complete guide on how to use application.\n\n<b>Volumes:</b>\n\nIn all we have total 3 volumes that you can browse through, Volume one is open and can viewed by all user who have installed this app without registering. For rest volumes you need to Register First. You can find the Registration option by just doing a right swipe in left hand side corner.\n\nAfter you have successfully registered you need to login to continue viewing the remaining Volumes.\n\nOnce you have opened the volumes just slide to view design in those particular volumes. If you like a particular design just click it. You can Zoom the design as well.\n\n<b>Order:</b>\n\nBelow the Zoom option there are some check boxes that you can select, check the boxes corresponding the designed you have liked and want to order.\n\nFill in the order in the order\'s Instruction by clicking on instruction tab, and complete all information as they are mandatory. Then add that item to cart. You can add as many item to your cart as you want.\n\nThen to view your cart click on the cart button on the top menu bar. Click send Inquiry to submit your order.\n\n<b>New Arrival:</b>\n\nNew Arrival is the section for our new collection that we introduce on timely basis. Keep checking the new arrival by clicking on the new tab or keep an eye on our notification.
+
+    </string>
+
+</resources>

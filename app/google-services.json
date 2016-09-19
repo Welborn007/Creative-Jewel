@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "520316701243",
+    "firebase_url": "https://creative-jewel.firebaseio.com",
+    "project_id": "creative-jewel",
+    "storage_bucket": "creative-jewel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520316701243:android:7fa98077d2169f2e",
+        "android_client_info": {
+          "package_name": "infotech.atom.com.creativejewel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520316701243-47tb28jloth3rtu3er28hh05jod689vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "infotech.atom.com.creativejewel",
+            "certificate_hash": "B34F76F1E30CAB976EADED8E405D1D7772DCA199"
+          }
+        },
+        {
+          "client_id": "520316701243-dekrpblrv8e9r22jbgeb9j7c7sdgbe62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWh0Dh2iPtD_gj-ccZBBOeUUAHxtGdnIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

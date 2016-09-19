@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo2"
+    tools:context="infotech.atom.com.creativejewel.Profile_activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/normal_actionbar" />
+
+        <TableLayout
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_corner_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/Username_header"
+                    android:text="Username :"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/UserName"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/name_header"
+                    android:text="Name :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/Companyname_header"
+                    android:text="Company :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/CompanyName"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/designation_header"
+                    android:text="Designation :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Designation"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/address_header"
+                    android:text="Address :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Address"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/Mobile_header"
+                    android:text="Mobile :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Mobile"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="20dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/email_header"
+                    android:text="Email ID :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Email"
+                    android:text="sample"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    
+
+
+
+</RelativeLayout>

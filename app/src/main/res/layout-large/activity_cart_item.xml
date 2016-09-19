@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_completeorder"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear_laundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Volume Name :"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_volume"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Volume"
+                android:textColor="#01628d"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:text="Page No :" />
+
+            <TextView
+                android:id="@+id/textView_page"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/header_page"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#01628d"
+                android:layout_marginLeft="5dp"
+                android:text="Page No" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:text="Item Checked :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_items"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:text="Items"
+                android:textColor="#01628d" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:text="Instructions :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView_instructions"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_instruction"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="#01628d" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/textView_remove"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Remove"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/connect"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/thumb"
+        android:textAllCaps="false"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context="infotech.atom.com.creativejewel.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/actionbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/logo1"
+                android:layout_above="@+id/viewpager1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/viewpager1"
+                android:layout_above="@+id/shelf"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="300dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/shelf"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+
+
+                    <Button
+                        android:id="@+id/volume1"
+                        android:layout_margin="5dp"
+                        android:textSize="12sp"
+                        android:gravity="bottom|center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/panel1"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/volume2"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:textSize="12sp"
+                        android:background="@drawable/panel2"
+                        android:gravity="bottom|center"
+                        android:textColor="@color/white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <Button
+                        android:id="@+id/volume3"
+                        android:layout_margin="5dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel3"
+                        android:gravity="bottom|center"
+                        android:textColor="@color/white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <LinearLayout android:id="@+id/left_drawer"
+        android:layout_width="280dp"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/customer"
+            android:background="@drawable/border_address"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/cust_login"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/login"
+                    android:src="@drawable/ic_login"
+                    android:layout_margin="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/cust_profile"
+                    android:text="Login"
+                    android:layout_toRightOf="@+id/login"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/cust_Register"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Register"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_register"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/cust_address"
+                    android:text="Register"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/cust_Profile"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Profile"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/cust_prof"
+                    android:text="Profile"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/cust_listing"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Order_listing"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_maps_local_shipping"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/cust_list"
+                    android:text="Orders"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/Order_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/howtouse"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/howToUse"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_info_"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/Help"
+                    android:text="How To Use"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/howToUse"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/Callus"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/callUS"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_phone_512"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/call"
+                    android:text="Call Us"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/callUS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/contactus"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/contactUS"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_contact"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/Contatc"
+                    android:text="Contact Us"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/contactUS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <View
+                android:background="#ccc"
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/cust_Logout"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Logout"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_logout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/cust_Logouttext"
+                    android:text="Logout"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:layout_toRightOf="@+id/Logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

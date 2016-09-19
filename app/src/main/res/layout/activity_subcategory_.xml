@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="infotech.atom.com.creativejewel.Subcategory_Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/normal_actionbar" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:text="Subcategory Items"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ListView
+        android:id="@+id/sub_Listing"
+        android:divider="#ccc"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
